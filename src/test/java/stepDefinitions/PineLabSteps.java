@@ -83,7 +83,7 @@ public class PineLabSteps {
     @Then("user should see the {string} message")
     public void user_should_see_the_message(String string) {
         // Write code here that turns the phrase above into concrete actions
-        String
+        //String
     }
 
     @Then("user should verify the status is {string}")

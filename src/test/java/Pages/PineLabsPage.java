@@ -28,7 +28,7 @@ public class PineLabsPage {
     private By pageTitle = By.xpath("//div[@class=\"zc-widget-header-title ng-star-inserted\"]//h2[text()=\"Tickets Status\"]");
     private By pinelabsTitle = By.xpath("//div[@class=\"col table-header ng-star-inserted\"]//h2[text()=\"Pine Lab Issues\"]");
     private By modelpagetitle = By.xpath("//h3[normalize-space(.) = \"Create Pine Lab Complaints Registration\"]");
-
+    private By status = By.xpath("//*[text()='status']");
     public String setAppselection() {
         WebDriverUtils.click(appselection);
         String title = driver.findElement(pageTitle).getText();
@@ -85,6 +85,11 @@ public class PineLabsPage {
 
     public void clickSubmit() {
         WebDriverUtils.click(submit);
+
+    }
+
+    public void checkstatus() {
+        WebDriverUtils.getText(status);
 
     }
 }
