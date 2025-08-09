@@ -315,14 +315,7 @@ public class WebDriverUtils {
 
 
         }
-       // System.out.println("flag value is "+flag);
-
-//        if(!flag ) {
-//            System.out.println("Customer selected");
-//        }
-//        else {
-//            System.out.println("no element exists");
-//        }
+       
     }
 
     public static void scrolldown() {
